@@ -1,0 +1,66 @@
+#containerSkills {
+    margin-top: 100px;
+    min-height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.contentContainer {
+    padding-bottom: 25px;
+}
+
+.iconSize {
+    width: 50px;
+}
+
+.displaySVG {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 60px;
+}
+
+.arrangeSVG {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 50px;
+}
+
+.colorSVG path {
+    fill: hsl(230, 86%, 14%);
+}
+
+/* .colorSVG path:hover {
+	fill: #ed6866;
+} */
+
+
+.angled-both-right-left {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to right, #f1e767 0%, #feb645 100%);
+}
+
+.angled-both-right-left:before,
+.angled-both-right-left:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    transition: ease all 0.5s;
+}
+
+.angled-both-right-left:before {
+    top: 0;
+    transform-origin: left top;
+    transform: skewY(-3deg);
+}
+
+.angled-both-right-left:after {
+    bottom: 0;
+    transform-origin: right bottom;
+    transform: skewY(-3deg);
+}

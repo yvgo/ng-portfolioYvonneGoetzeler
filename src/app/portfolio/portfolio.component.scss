@@ -1,0 +1,16 @@
+.projectView {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:80px;
+}
+
+.linksPortfolio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:60px;
+    padding-bottom: 20px;
+}
