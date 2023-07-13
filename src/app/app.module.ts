@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
@@ -10,6 +11,9 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkillsComponent } from './skills/skills.component';
+import { FormComponent } from './form/form.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { OnePagerComponent } from './one-pager/one-pager.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +24,14 @@ import { SkillsComponent } from './skills/skills.component';
     ContactComponent,
     AboutComponent,
     FooterComponent,
-    SkillsComponent
+    SkillsComponent,
+    FormComponent,
+    ImprintComponent,
+    OnePagerComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
     NgxPageScrollModule,
   ],

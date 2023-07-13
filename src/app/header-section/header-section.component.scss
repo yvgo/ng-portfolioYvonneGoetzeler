@@ -1,3 +1,8 @@
+h1 {
+    font-family: Satoshi,Helvetica,sans-serif;
+    font-weight: bold;
+}
+
 .headBG {
 	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -45,8 +50,8 @@
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	font-size: 40px;
-	padding-top: 150px;
+	font-size: 60px;
+	padding-top: 200px;
 	animation: move-to-right 1s ease;
 }
 
@@ -71,7 +76,7 @@
 }
 
 .mainCompetences {
-	font-size: 30px;
+	font-size: 50px;
 	animation: move-to-left 1s ease;
 }
 

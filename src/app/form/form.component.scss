@@ -1,0 +1,11 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    min-width:450px;
+    max-width: 600px;
+}
+
+.agree {
+    display: flex;
+    flex-direction: row;
+}
