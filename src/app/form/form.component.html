@@ -1,15 +1,31 @@
 <div>
     <form class="formContainer">
-        <input type="text" id="name" name="name">
-        <input type="text" id="mail" name="mail">
-        <textarea name="message" rows="10" cols="30">Text ...
-        </textarea>
-        <div class="agree">
-            <input type="checkbox" id="dsgvo" name="dsgvo" value="agree">
-            <label for="dsgvo"> I agree the terms of the ... *</label>
-            
+        <div class="arange">
+            <div class="inputText">
+                <input class="info" type="text" id="name" name="name" placeholder="Your Name *">
+                <input class="info" type="text" id="mail" name="mail" placeholder="Your E-Mail *">
+                <textarea name="message" rows="10" cols="30" placeholder="Your Message ..."></textarea>
+            </div>
+    
+            <div class="agree">
+                <input type="checkbox" id="dsgvo" name="dsgvo" value="agree">
+                <label for="dsgvo"> I agree the terms of ... *</label>
+    
+            </div>
+            <label>* Pflichtfeld</label>
         </div>
-        <label for="pflicht">* Pflichtfeld</label>
-        <input type="submit" value="Submit">
+        <div class="buttonArrange">
+            <div class="buttonAnimation">
+                <a href="#" class="cta">
+                    <span>Send Message!</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+            </div>
+         <!--   <button>Send Message</button>-->
+         </div> 
+        
     </form>
 </div>

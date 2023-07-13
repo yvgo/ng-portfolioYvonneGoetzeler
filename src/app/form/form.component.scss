@@ -1,11 +1,118 @@
 .formContainer {
     display: flex;
     flex-direction: column;
-    min-width:450px;
+/*     align-items:flex-start; */
+    min-width: 450px;
     max-width: 600px;
+}
+
+.arange {
+    justify-content: right;
+    margin-bottom:10px;
+}
+
+ 
+textarea{
+    border: 1px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    border-radius: 4px;
+    resize: none;
+    cursor:pointer;
+    font-family: Satoshi,Helvetica,sans-serif;
+	font-size: 14px;
+}
+
+input.info {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  cursor:pointer;
 }
 
 .agree {
     display: flex;
     flex-direction: row;
+    justify-content: left;
+    gap:10px;
+    margin-top:10px;
+    margin-bottom:10px;
 }
+
+.buttonArrange {
+    display: flex;
+    justify-content:center;
+}
+
+button {
+    width: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    &:hover {
+        background-color: #A5E3DC;
+        font-weight: bold;
+    }
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+  }
+  
+  .cta {
+	position: relative;
+	margin: auto;
+	padding: 19px 22px;
+	transition: all 0.2s ease;
+  }
+  .cta:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	border-radius: 28px;
+	background: rgb(255,208,70, 0.5);
+	width: 56px;
+	height: 56px;
+	transition: all 0.3s ease;
+  }
+  .cta span {
+	position: relative;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 900;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	vertical-align: middle;
+  }
+  .cta svg {
+	position: relative;
+	top: 0;
+	margin-left: 10px;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: rgb(44, 49, 109);
+	stroke-width: 2;
+	transform: translateX(-5px);
+	transition: all 0.3s ease;
+  }
+  .cta:hover:before {
+	width: 100%;
+	background: rgb(255,208,70);
+  }
+  .cta:hover svg {
+	transform: translateX(0);
+  }
+  .cta:active {
+	transform: scale(0.96);
+  }
