@@ -107,3 +107,62 @@ h1 {
 		opacity: 1;
 	}
 }
+
+.buttonAnimation {
+	margin-top:5em;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+  }
+  
+  .cta {
+	position: relative;
+	margin: auto;
+	padding: 19px 22px;
+	transition: all 0.2s ease;
+  }
+  .cta:before {
+	content: "";
+	position: absolute;
+	top: -6px;
+	left: 0;
+	display: block;
+	border-radius: 34px;
+	background: rgb(255,208,70, 0.5);
+	width: 70px;
+	height: 70px;
+	transition: all 0.3s ease;
+  }
+  .cta span {
+	position: relative;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 900;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	vertical-align: middle;
+  }
+  .cta svg {
+	position: relative;
+	top: 0;
+	margin-left: 10px;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: rgb(44, 49, 109);
+	stroke-width: 2;
+	transform: translateX(-5px);
+	transition: all 0.3s ease;
+  }
+  .cta:hover:before {
+	width: 100%;
+	background: rgb(255,208,70);
+  }
+  .cta:hover svg {
+	transform: translateX(0);
+  }
+  .cta:active {
+	transform: scale(0.96);
+  }
