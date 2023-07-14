@@ -1,14 +1,95 @@
 .card {
     width: 400px;
-    height: 450px;
+    height: 480px;
     /* border: solid 0px rgba($color: #000000, $alpha: 0.3); */
     border-radius: 5px;
     box-shadow: 5px 5px 10px -2px #c6c6c6;
 
-    .cardImg {
-        border-radius: 5px 5px 0 0;
-        height: 250px;
-        background-image: url(../../assets/img/street.jpg);
-        background-size: cover;
-    }
+    
 }
+
+.cardImg {
+    border-radius: 5px 5px 0 0;
+    height: 250px;
+    /* background-image: url(../../assets/img/street.jpg);
+    background-size: cover; */
+    margin-bottom:50px;
+}
+
+img {
+    width: 400px;
+    border-radius: 5px 5px 0 0;
+}
+
+.title {
+    margin-bottom:10px;
+}
+
+.buttonArrange {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .cta {
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+  }
+  
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    display: block;
+    border-radius: 28px;
+    background: rgb(255, 208, 70, 0.5);
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+  
+  .cta span {
+    position: relative;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+  
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: rgb(44, 49, 109);
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover:before {
+    width: 80%;
+    background: rgb(255, 208, 70);
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active {
+    transform: scale(0.96);
+  }

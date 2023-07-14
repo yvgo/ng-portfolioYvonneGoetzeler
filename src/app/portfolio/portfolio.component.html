@@ -1,17 +1,18 @@
 <section class="bgPortfolio">
     <div class="contentContainer">
         <h2 id="portfolio" class="add">Portfolio</h2>
-        <div class="linksPortfolio">
+        <!-- <div class="linksPortfolio">
             <button>All</button>
             <button>JavaScript</button>
             <button>Angular</button>
-        </div>
+        </div> -->
         <div>Some sample of my work created while my education as Frontend Developer. Fell free to try them out.</div>
         <div class="projectView">
-            <app-projects></app-projects>
-            <app-projects></app-projects>
-            <app-projects></app-projects>
-            <app-projects></app-projects>
+            
+            <app-projects [project]="pokemonProject"></app-projects>
+            <app-projects [project]="joinProject"></app-projects>
+            <app-projects [project]="eplProject"></app-projects>
+            <app-projects [project]="portfolioProject"></app-projects>
         </div>
     </div>
     

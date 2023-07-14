@@ -14,6 +14,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { FormComponent } from './form/form.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { OnePagerComponent } from './one-pager/one-pager.component';
+import { ContactContentComponent } from './contact-content/contact-content.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { OnePagerComponent } from './one-pager/one-pager.component';
     SkillsComponent,
     FormComponent,
     ImprintComponent,
-    OnePagerComponent
+    OnePagerComponent,
+    ContactContentComponent
   ],
   imports: [
     BrowserModule,

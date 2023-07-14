@@ -9,15 +9,23 @@ import { Projects } from '../model/projects';
 })
 export class PortfolioComponent {
 
-  project = PROJECTS[0];
+  pokemonProject = PROJECTS[0];
 
-  projects = PROJECTS;
+  joinProject = PROJECTS[1];
+
+  eplProject = PROJECTS[2];
+
+  portfolioProject = PROJECTS[3];
+
+  /* project = PROJECTS[0];
+
+  projects = PROJECTS; */
   /* coreCourse = COURSES[0];
   rxjsCourse = COURSES[1];
   ngrxCourse = COURSES[2]; */
 
-  onProjectSelected(project:Projects) {
+  /* onProjectSelected(project:Projects) {
     console.log("project component - works", project);
-  }
+  } */
 
 }
