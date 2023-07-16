@@ -15,6 +15,7 @@ import { FormComponent } from './form/form.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { OnePagerComponent } from './one-pager/one-pager.component';
 import { ContactContentComponent } from './contact-content/contact-content.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ContactContentComponent } from './contact-content/contact-content.compo
     FormComponent,
     ImprintComponent,
     OnePagerComponent,
-    ContactContentComponent
+    ContactContentComponent,
+    DataProtectionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 .card {
-    width: 400px;
-    height: 480px;
+    /* width: 400px; */
+    width: 100%;
+    height: 100%;
     /* border: solid 0px rgba($color: #000000, $alpha: 0.3); */
     border-radius: 5px;
     box-shadow: 5px 5px 10px -2px #c6c6c6;
@@ -10,27 +11,32 @@
 
 .cardImg {
     border-radius: 5px 5px 0 0;
-    height: 250px;
-    /* background-image: url(../../assets/img/street.jpg);
-    background-size: cover; */
-    margin-bottom:50px;
+    /* height: 250px;
+    background-image: url(../../assets/img/street.jpg);
+    background-size: cover; 
+    margin-bottom:50px;*/
 }
 
 img {
-    width: 400px;
+    width: 100%;
     border-radius: 5px 5px 0 0;
 }
 
+.cardText {
+  padding: 30px 20px 40px;
+}
+
 .title {
-    margin-bottom:10px;
+  font-weight: bold;
+  margin-bottom:15px;
 }
 
 .buttonArrange {
-    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap:30px;
+    margin-top: 30px;
 }
 
 a {
@@ -93,3 +99,53 @@ a {
   .cta:active {
     transform: scale(0.96);
   }
+
+  @media only screen and (max-width: 775px) {
+    /* For tablet: */
+    .buttonArrange {
+      display: flex;
+      flex-direction: row;
+      justify-content:space-around;
+      margin-top: 30px;
+  }
+
+  .cta {
+    position: relative;
+    padding: 19px 10px;
+  }
+
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 2px;
+    display: block;
+    border-radius: 28px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .cta span {
+    font-size: 12px;
+  }
+}
+
+
+@media only screen and (max-width: 624px) {
+
+  .cta {
+    position: relative;
+    padding: 19px 22px;
+  }
+
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    display: block;
+    border-radius: 28px;
+    width: 45px;
+    height: 45px;
+  }
+}

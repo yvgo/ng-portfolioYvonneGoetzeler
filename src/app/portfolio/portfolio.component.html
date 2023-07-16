@@ -6,13 +6,25 @@
             <button>JavaScript</button>
             <button>Angular</button>
         </div> -->
-        <div>Some sample of my work created while my education as Frontend Developer. Fell free to try them out.</div>
+        <div class="portfolioDescription">Some sample of my work created while my education as Frontend Developer. Fell free to try them out.</div>
         <div class="projectView">
+            <div class="withArrange">
+                <app-projects [project]="pokemonProject"></app-projects>
+            </div>
+            <div class="withArrange">
+                <app-projects [project]="joinProject"></app-projects>
+            </div>
+            <div class="withArrange">
+                <app-projects [project]="eplProject"></app-projects>
+            </div>
+            <div class="withArrange">
+                <app-projects [project]="portfolioProject"></app-projects>
+            </div>
             
-            <app-projects [project]="pokemonProject"></app-projects>
-            <app-projects [project]="joinProject"></app-projects>
-            <app-projects [project]="eplProject"></app-projects>
-            <app-projects [project]="portfolioProject"></app-projects>
+            
+            
+            
+            
         </div>
     </div>
     

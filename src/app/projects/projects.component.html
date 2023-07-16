@@ -4,34 +4,37 @@
     <div class="cardImg">
         <img [src]="project.imgUrl">
     </div>
-    <h4 class="title">{{ project.title }}</h4>
-    <div>
-        {{ project.longDescription }}
-    </div>
-    <div>
-        <div class="buttonArrange">
-            <div class="buttonAnimation">
-                <a [href]="project.webLink" class="cta">
-                    <span>Try it!</span>
-                    <svg width="13px" height="10px" viewBox="0 0 13 10">
-                        <path d="M1,5 L11,5"></path>
-                        <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                </a>
-            </div>
-            <div class="buttonAnimation">
-                <a [href]="project.gitLink" class="cta">
-                    <span>Git</span>
-                    <svg width="13px" height="10px" viewBox="0 0 13 10">
-                        <path d="M1,5 L11,5"></path>
-                        <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="black" stroke-width="2" transform="rotate(0)">
-                        <path d="M12 20V6M5 13l7-7 7 7"/>
-                      </svg> -->
-                </a>
+    <div class="cardText">
+        <div class="title">{{ project.title }}</div>
+        <div>
+            {{ project.longDescription }}
+        </div>
+        <div class="cardFooter">
+            <div class="buttonArrange">
+                <div class="buttonAnimation">
+                    <a [href]="project.webLink" target="_blank" class="cta">
+                        <span>Try it!</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <div class="buttonAnimation">
+                    <a [href]="project.gitLink" target="_blank" class="cta">
+                        <span>Git</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="black" stroke-width="2" transform="rotate(0)">
+                            <path d="M12 20V6M5 13l7-7 7 7"/>
+                          </svg> -->
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+    
 
 </div>

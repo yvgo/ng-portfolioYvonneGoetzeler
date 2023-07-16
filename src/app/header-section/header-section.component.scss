@@ -1,6 +1,6 @@
 h1 {
-    font-family: Satoshi,Helvetica,sans-serif;
-    font-weight: bold;
+	font-family: Satoshi, Helvetica, sans-serif;
+	font-weight: bold;
 }
 
 .headBG {
@@ -11,33 +11,41 @@ h1 {
 	background-size:contain;*/
 	height: 85vh;
 	/* background-color: azure; */
-
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-image: url(../../assets/img/bg-head.png);
 	background-size: auto;
 	background-repeat: no-repeat;
 	background-position: right top;
-	
+
 }
 
 @keyframes gradient {
-	0% {background-position: 0% 50%;}
-	50% {background-position: 100% 50%;}
-	100% {background-position: 0% 50%;}
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .topNav {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	gap:60px;
+	gap: 60px;
 
 	div {
-		padding:15px 10px 10px;
+		padding: 15px 10px 10px;
 		background-color: rgba($color: #fff, $alpha: 0.75);
 		border-radius: 0 0 5px 5px;
+
 		a {
-			color:darkblue;
+			color: darkblue;
 			text-decoration: none;
 		}
 	}
@@ -109,33 +117,35 @@ h1 {
 }
 
 .buttonAnimation {
-	margin-top:5em;
+	margin-top: 5em;
 }
 
 a {
 	text-decoration: none;
 	color: inherit;
-  }
-  
-  .cta {
+}
+
+.cta {
 	position: relative;
 	margin: auto;
 	padding: 19px 22px;
 	transition: all 0.2s ease;
-  }
-  .cta:before {
+}
+
+.cta:before {
 	content: "";
 	position: absolute;
 	top: -6px;
 	left: 0;
 	display: block;
 	border-radius: 34px;
-	background: rgb(255,208,70, 0.5);
+	background: rgb(255, 208, 70, 0.5);
 	width: 70px;
 	height: 70px;
 	transition: all 0.3s ease;
-  }
-  .cta span {
+}
+
+.cta span {
 	position: relative;
 	font-size: 24px;
 	line-height: 30px;
@@ -143,8 +153,9 @@ a {
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	vertical-align: middle;
-  }
-  .cta svg {
+}
+
+.cta svg {
 	position: relative;
 	top: 0;
 	margin-left: 10px;
@@ -155,14 +166,86 @@ a {
 	stroke-width: 2;
 	transform: translateX(-5px);
 	transition: all 0.3s ease;
-  }
-  .cta:hover:before {
+}
+
+.cta:hover:before {
 	width: 100%;
-	background: rgb(255,208,70);
-  }
-  .cta:hover svg {
+	background: rgb(255, 208, 70);
+}
+
+.cta:hover svg {
 	transform: translateX(0);
-  }
-  .cta:active {
+}
+
+.cta:active {
 	transform: scale(0.96);
-  }
+}
+
+
+@media (max-width: 1024px) {
+	.mainCompetences {
+		font-size: 40px;
+	}
+
+	.competences {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		gap: 40px;
+	}
+}
+
+@media (max-width: 885px) {
+	/* For Tablet: */
+	.headText {
+		font-size: 50px;
+		margin-top:50px;
+	}
+
+	.mainCompetences {
+		font-size: 36px;
+	}
+
+	.competences {
+		display: flex;
+		flex-direction: column;
+		justify-content: left;
+		align-items:flex-start;
+		gap: 25px;
+	}
+}
+
+@media only screen and (max-width: 624px) {
+	/* For Mobile: */
+	.headBG {
+		background-size: 700px;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	
+	.topNav {
+		display: none;
+	}
+
+	.headText {
+		font-size: 44px;
+		margin-top:0px;
+	}
+
+	.mainCompetences {
+		font-size: 28px;
+	}
+
+	.competences {
+		gap: 20px;
+	}
+}
+
+
+@media (max-width: 390px) {
+	.headText {
+		font-size: 44px;
+		margin-top:-44px;
+	}
+}

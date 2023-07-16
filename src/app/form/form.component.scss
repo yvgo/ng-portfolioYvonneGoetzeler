@@ -1,34 +1,31 @@
 .formStyle {
-padding-bottom:50px;
+  /* padding-bottom: 50px; */
 }
 
 .formContainer {
-    display: flex;
-    flex-direction: column;
-    min-width:450px;
-    max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
 }
 
 .agree {
-    display: flex;
-    flex-direction: row;
   display: flex;
-  flex-direction: column;
-  min-width: 450px;
-  max-width: 600px;
- 
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 10px;
 }
 
-/* .arange {
-  justify-content: right;
-  margin-bottom: 10px;
-} */
-
+.mandatory {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
 
 textarea {
   border: 1px solid #ccc;
-  width: 95%;
-  padding: 10px;
+  width: 93%;
+  padding: 20px;
   border-radius: 4px;
   resize: none;
   cursor: pointer;
@@ -41,19 +38,10 @@ input.info {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 20px;
   border-radius: 4px;
   margin-bottom: 20px;
   cursor: pointer;
-}
-
-.agree {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  gap: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .buttonArrange {
@@ -136,4 +124,107 @@ a {
 .cta:active {
   transform: scale(0.96);
 
+}
+
+@media (max-width: 1440px) {
+  
+}
+
+@media (max-width: 1190px) {
+  .formContainer {
+    width: 500px;
+  }
+
+  textarea {
+    width: 92%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .formContainer {
+    width: 450px;
+  }
+
+  textarea {
+    width: 91%;
+  }
+}
+
+@media (max-width: 885px) {
+  /* For Tablet: */
+
+  .formContainer {
+    width: 100%;
+  }
+
+  .arrange {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  textarea {
+    width: 93%;
+  }
+}
+
+@media only screen and (max-width: 624px) {
+
+  /* For Mobile: */
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  input.info {
+    width: 100%;
+
+  }
+
+  textarea {
+    width: 92%;
+  }
+
+  .agree {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+
+  input.info {
+    width: 100%;
+  }
+
+  textarea {
+    width: 91%;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+
+  /* input.info {
+    width: 82%;
+  }
+
+  textarea {
+    width: 77%;
+  } */
+
+  .agree {
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 390px) {
+
+  textarea {
+    width: 88%;
+  }
+/* 
+  .agree {
+    width: 50%;
+  } */
 }

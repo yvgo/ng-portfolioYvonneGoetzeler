@@ -8,7 +8,7 @@
     flex-direction: row;
     align-items:center;
     justify-content:space-between;
-
+color: rgb(64, 116, 110);
 
 }
 
@@ -19,3 +19,45 @@
     justify-content: center;
     gap:30px;
 }
+
+a {
+    text-decoration: none;
+    color: rgb(64, 116, 110);
+
+    &:hover {
+        color: hsl(230, 74%, 24%);
+    }
+}
+
+.colorSVG path {
+    fill: rgb(64, 116, 110);
+}
+
+.colorSVG path:hover {
+	fill: hsl(230, 74%, 24%);
+}
+
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 885px) {
+
+
+}
+
+@media only screen and (max-width: 624px) {
+	/* For Mobile: */
+    .footerArrange {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+
+}
+
+
+@media (max-width: 390px) {}
