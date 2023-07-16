@@ -1,11 +1,3 @@
-section {
-
-}
-
-/* h2.add {
-	margin-top: 0 !important;
-} */
-
 .bgContact {
 	height: 70vh;
 	background-image: url(../../assets/img/bgContact.png);
@@ -16,16 +8,19 @@ section {
 	background-position: left bottom;
 }
 
+.contentContainer {
+	position: relative;
+	margin-top: 250px;
+	top: -180px;
+}
+
 .textArrange {
 	display: flex;
 	flex-direction: row;
-/* 	gap: 30px; */
+	/* 	gap: 30px; */
 }
 
-.contactContainer {
-	/* margin-bottom: 5em; */
 
-}
 
 .arrange {
 	display: flex;
@@ -132,6 +127,12 @@ a {
 	.bgContact {
 		background-size: 800px;
 	}
+
+	.contentContainer {
+		position: relative;
+		margin-top: 220px;
+		top: -200px;
+	}
 }
 
 @media (max-width: 885px) {
@@ -139,6 +140,12 @@ a {
 	/* For Tablet: */
 	.bgContact {
 		background-size: 700px;
+	}
+
+	.contentContainer {
+		position: relative;
+		margin-top: 400px;
+		top: -400px;
 	}
 
 	.arrange {
@@ -151,7 +158,11 @@ a {
 @media only screen and (max-width: 624px) {
 
 	/* For Mobile: */
-
+	.contentContainer {
+		position: relative;
+		margin-top: 500px;
+		top: -500px;
+	}
 }
 
 @media only screen and (max-width: 470px) {
