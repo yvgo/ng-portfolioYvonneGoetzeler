@@ -1,15 +1,15 @@
 .footerStyle {
     background-color: rgb(240, 240, 240);
-    padding-bottom:40px;
+    padding-bottom: 40px;
 }
 
 .footerArrange {
     display: flex;
     flex-direction: row;
-    align-items:center;
-    justify-content:space-between;
-color: rgb(64, 116, 110);
-
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(64, 116, 110);
+    font-size: 14px;
 }
 
 .footerLinks {
@@ -17,7 +17,7 @@ color: rgb(64, 116, 110);
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap:30px;
+    gap: 30px;
 }
 
 a {
@@ -25,6 +25,7 @@ a {
     color: rgb(64, 116, 110);
 
     &:hover {
+        text-decoration: underline;
         color: hsl(230, 74%, 24%);
     }
 }
@@ -34,30 +35,29 @@ a {
 }
 
 .colorSVG path:hover {
-	fill: hsl(230, 74%, 24%);
+    fill: hsl(230, 74%, 24%);
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) {}
 
-}
-
-@media (max-width: 885px) {
-
-
-}
+@media (max-width: 885px) {}
 
 @media only screen and (max-width: 624px) {
-	/* For Mobile: */
+
+    /* For Mobile: */
     .footerArrange {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap:20px;        
+    }
+
+    .legalInfos {
+        display: none;
     }
 }
 
-@media only screen and (max-width: 470px) {
-
-}
+@media only screen and (max-width: 470px) {}
 
 
 @media (max-width: 390px) {}

@@ -33,20 +33,35 @@ h1 {
 	}
 }
 
+.headerNav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px 100px;
+}
+
+.imgSize {
+	width: 70px;
+}
+
 .topNav {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	gap: 60px;
+	gap: 20px;
 
 	div {
 		padding: 15px 10px 10px;
-		background-color: rgba($color: #fff, $alpha: 0.75);
+		/* background-color: rgba($color: #fff, $alpha: 0.75); */
 		border-radius: 0 0 5px 5px;
 
 		a {
 			color: darkblue;
 			text-decoration: none;
+			
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 }
