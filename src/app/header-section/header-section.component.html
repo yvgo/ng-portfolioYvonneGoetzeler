@@ -1,31 +1,59 @@
 <section id="beginning" class="headBG">
-    <div class="headerNav">
-        <div>
-            <img class="imgSize" src="../../assets/img/logo-yg-kl.png"> 
+    <div class="contentContainer">
+        <div class="headerNav">
+            <div>
+                <img class="imgSize" src="../../assets/img/logo-yg-kl.png">
+            </div>
+            <div class="topNav">
+                <div><a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="300"
+                        href="#about">About</a></div>
+                <div><a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="300"
+                        href="#portfolio">Portfolio</a></div>
+                <div><a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="400"
+                        href="#skills">Skills</a></div>
+                <div><a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="500"
+                        href="#contact">Contact</a></div>
+            </div>
+            <div id="burgerButton" class="burger">
+                <ul class="menu" [class.open]="isOpen">
+                    <li><a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="300"
+                            href="#about" (click)="closeMenu()">About</a></li>
+                    <li><a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="300"
+                            href="#portfolio" (click)="closeMenu()">Portfolio</a></li>
+                    <li><a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="400"
+                            href="#skills" (click)="closeMenu()">Skills</a></li>
+                    <li><a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="500"
+                            href="#contact" (click)="closeMenu()">Contact</a></li>
+                </ul>
+                <div class="burger-menu" [class.open]="isOpen" (click)="toggleMenu()">
+                    <!-- toggle-lines -->
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
         </div>
-        <div class="topNav">
-            <div><a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="300" href="#about">About</a></div>
-            <div><a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="300" href="#portfolio">Portfolio</a></div>
-            <div><a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="400" href="#skills">Skills</a></div>
-            <div><a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="500" href="#contact">Contact</a></div>
+
+        <div>
+            <h1 class="headText">Yvonne Götzeler</h1>
+            <div class="mainCompetences competences">
+                <div>Frontend Development</div>
+                <div>UI + UX Design</div>
+                <div>Requirements Engineering</div>
+            </div>
+            <div class="buttonAnimation">
+                <a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="500"
+                    href="#contact" class="cta">
+                    <span>Let´s talk!</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
     
-    <div class="contentContainer">
-        <h1 class="headText">Yvonne Götzeler</h1>
-        <div class="mainCompetences competences">
-            <div>Frontend Development</div>
-            <div>UI + UX Design</div>
-            <div>Requirements Engineering</div>
-        </div>
-        <div class="buttonAnimation">
-            <a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="500" href="#contact" class="cta">
-                <span>Let´s talk!</span>
-                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                  <path d="M1,5 L11,5"></path>
-                  <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
-              </a>
-        </div>
-    </div>
+
+    
 </section>

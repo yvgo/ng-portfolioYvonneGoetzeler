@@ -10,8 +10,8 @@
 
 .contentContainer {
 	position: relative;
-	margin-top: 250px;
-	top: -180px;
+	margin-top: 0px;
+	top: 75px;
 }
 
 .textArrange {
@@ -19,8 +19,6 @@
 	flex-direction: row;
 	/* 	gap: 30px; */
 }
-
-
 
 .arrange {
 	display: flex;
@@ -37,10 +35,16 @@ h3 {
 	margin-top: 0;
 }
 
-.upFix {
+/* .upFix {
 	position: fixed;
 	right: 30px;
 	bottom: 50px;
+} */
+
+.upFix {
+	position: absolute;
+	right: -95px;
+	bottom: -150px;
 }
 
 .up {
@@ -123,6 +127,14 @@ a {
 }
 
 
+@media (max-width: 1235px) {
+	.upFix {
+		position: absolute;
+		right: -75px;
+		bottom: -130px;
+	}
+}
+
 @media (max-width: 1024px) {
 	.bgContact {
 		background-size: 800px;
@@ -130,8 +142,14 @@ a {
 
 	.contentContainer {
 		position: relative;
-		margin-top: 220px;
-		top: -200px;
+		margin-top: 0px;
+		top: 40px;
+	}
+
+	.upFix {
+		position: absolute;
+		right: -65px;
+		bottom: -160px;
 	}
 }
 
@@ -144,14 +162,20 @@ a {
 
 	.contentContainer {
 		position: relative;
-		margin-top: 400px;
-		top: -400px;
+		margin-top: 250px;
+		top: -250px;
 	}
 
 	.arrange {
 		display: flex;
 		flex-direction: column;
 		gap: 30px;
+	}
+
+	.upFix {
+		position: absolute;
+		right: -25px;
+		bottom: -260px;
 	}
 }
 
@@ -172,4 +196,11 @@ a {
 }
 
 
-@media (max-width: 390px) {}
+@media (max-width: 390px) {
+	.upFix {
+		position: absolute;
+		right: -15px;
+		bottom: -260px;
+	}
+
+}

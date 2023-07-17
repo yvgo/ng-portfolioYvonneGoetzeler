@@ -10,7 +10,7 @@
 }
 
 .textArrange {
- margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .iconSize {
@@ -20,7 +20,7 @@
 .displaySVG {
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content: flex-start;
     gap: 8px 60px;
 }
 
@@ -30,6 +30,7 @@
     justify-content: start;
     align-items: center;
     width: 50px;
+    height: 100px;
 }
 
 .colorSVG path {
@@ -40,6 +41,8 @@
 	fill: #ed6866;
 } */
 
+
+/* Background */
 
 .angled-both-right-left {
     width: 100%;
@@ -71,18 +74,17 @@
 }
 
 
-@media (max-width: 1024px) {
-
-}
+@media (max-width: 1024px) {}
 
 @media (max-width: 885px) {
-	/* For Tablet: */
+    /* For Tablet: */
 
 }
 
 
 @media only screen and (max-width: 624px) {
-	/* For Mobile: */
+
+    /* For Mobile: */
     .displaySVG {
         justify-content: center;
     }
@@ -92,7 +94,4 @@
     }
 }
 
-@media only screen and (max-width: 470px) {
-	
-}
-
+@media only screen and (max-width: 470px) {}

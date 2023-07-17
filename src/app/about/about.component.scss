@@ -35,6 +35,22 @@ svg {
     height:5em;
 }
 
+.aboutArrange {
+    display: flex;
+    flex-direction: row;
+    top:-150px;
+}
+
+.myImg {
+    position: relative;
+    border-radius: 100%;
+    border: 5px solid;
+    width: 230px;
+    top: 25px;
+    margin-left: 20px;
+    margin-bottom: 45px;
+}
+
 .colorSVG path {
     fill: hsl(230, 80%, 21%);
 }
@@ -91,6 +107,23 @@ svg {
     .sizeCol {
         width: 30%;
     }
+
+    .aboutArrange {
+        display: flex;
+        flex-direction:column;
+       /*  top:-20px; */
+        align-items: center;
+    }
+
+    .myImg {
+        position: relative;
+        border-radius: 100%;
+        border: 5px solid;
+        width: 220px;
+        top: 0;
+        margin-left: 20px;
+        margin-bottom: 25px;
+    }
 }
 
 @media (max-width: 770px) {
@@ -110,6 +143,7 @@ svg {
     }
 
 }
+
 @media only screen and (max-width: 510px) {
 	/* For Mobile: */
 
@@ -123,6 +157,5 @@ svg {
         width: 60%;
     }
 }
-
 
 @media (max-width: 390px) {}
