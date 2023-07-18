@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { HeaderSectionComponent } from './header-section/header-section.component';
@@ -37,6 +38,7 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     NgxPageScrollModule,
   ],
   providers: [],

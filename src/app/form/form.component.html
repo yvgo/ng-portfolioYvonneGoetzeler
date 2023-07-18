@@ -1,13 +1,13 @@
-<div class="formStyle">
-    <form>
+<div class="formStyle" >
+    <form (submit)="sendMail()" ngNativeValidate #myForm>
         <div class="formContainer">
             <div>
-                <input class="info" type="text" id="name" name="name" placeholder="Your Name *">
-                <input class="info" type="text" id="mail" name="mail" placeholder="Your E-Mail *">
-                <textarea name="message" rows="10" cols="30" placeholder="Your Message ..."></textarea>
+                <input class="info" type="text" id="name" name="name" placeholder="Your Name *" #nameField required>
+                <input class="info" type="email" id="mail" name="mail" placeholder="Your E-Mail *" #mailField required>
+                <textarea required name="message" rows="10" cols="30" #messageField placeholder="Your Message ...*"></textarea>
             </div>
             <div class="agree">
-                <input type="checkbox" id="dsgvo" name="dsgvo" value="agree">
+                <input type="checkbox" id="dsgvo" name="dsgvo" value="agree" #dsgvo required>
                 <label for="dsgvo"> I agree to the processing of the entered data and the <a routerLink="/dataProtection" target="_blank">privacy&nbsp;policy</a>.&nbsp;*</label>
             </div>
             <div class="mandatory">
@@ -15,7 +15,9 @@
             </div>
         </div>
         <div class="buttonArrange">
-            <div class="buttonAnimation">
+            <!-- <button (click)="doStg()">Senden</button> -->
+            <button type="submit" #sendButton>Senden</button>
+            <!-- <div class="buttonAnimation">
                 <a href="#" class="cta">
                     <span>Send Message!</span>
                     <svg width="13px" height="10px" viewBox="0 0 13 10">
@@ -23,7 +25,7 @@
                         <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
                 </a>
-            </div>
+            </div> -->
         </div>
     </form>
 </div>

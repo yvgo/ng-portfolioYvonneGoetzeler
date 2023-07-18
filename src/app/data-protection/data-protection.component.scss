@@ -1,0 +1,42 @@
+body {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+.header {
+        background-image: url(../../assets/img/bg-head.png);
+        background-size: 500px;
+        background-repeat: no-repeat;
+        background-position: right top;
+    margin-bottom: 50px;
+}
+
+.imgSize {
+    width: 80px;
+}
+
+.source {
+    margin-top:20px;
+}
+
+/* .bgFooter {
+	background-image: url(../../assets/img/bgContact.png);
+	background-size: 500px;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+} */
