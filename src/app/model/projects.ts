@@ -7,4 +7,6 @@ export interface Projects {
     longDescription: string;
     keywords: string;
     category:string;
+    webLink:string;
+    gitLink:string;
 }

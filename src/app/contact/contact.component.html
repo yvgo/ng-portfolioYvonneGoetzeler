@@ -1,15 +1,33 @@
 <section class="bgContact">
   <div class="contentContainer">
-    <h2 id="contact" class="add">Contact</h2>
-    <h3 id="contact" class="add">Got a problem to solve?</h3>
-    <div class="textArrange">
-      <div>You need a UX-Designer and Frontend developer in one person? Contact me through this form, I am interested in hearing you, knowing your ideas and contributin to your projects with my work.
-      Feel free and contact me!
-      </div>
-      <div>
-        <app-form></app-form>
+    <div class="contactContainer">
+      <h2 id="contact">Contact</h2>
+      <div class="arrange">
+        <div class="textArrange">
+          <h3 id="contact" class="add">Got a problem to solve?</h3>
+          <div>You need a UX-Designer and Frontend developer in one person? Contact me through this form, I am
+            interested in hearing you, knowing your ideas and contributin to your projects with my work.
+            Feel free and contact me!
+          </div>
+        </div>
+        <div>
+          <app-form></app-form>
+        </div>
+        <div class="upFlex">
+          <div class="upStyle">
+            <a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="500"
+              href="#beginning" class="cta">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                  stroke="black" stroke-width="2">
+                  <path d="M12 20V6M5 13l7-7 7 7" />
+                </svg>
+              </div>
+              <div class="up">Up</div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    <a pageScroll [pageScrollAdjustHash]="true" [pageScrollOffset]="0" [pageScrollDuration]="500" href="#beginning">Up</a>
   </div>
 </section>

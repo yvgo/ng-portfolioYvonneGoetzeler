@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
-import { Projects } from '../model/projects'
+import { PROJECTS } from '../../db-data'
+import { Projects } from '../model/projects';
 
 @Component({
   selector: 'app-projects',
@@ -8,7 +9,10 @@ import { Projects } from '../model/projects'
 })
 export class ProjectsComponent implements OnInit {
 
-  /* @Input() project:Projects; */
+  @Input()
+  project!:Projects;
+
+  constructor() { }
 
   ngOnInit(): void {
   }

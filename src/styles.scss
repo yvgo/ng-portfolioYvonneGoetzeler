@@ -1,10 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    margin:0;
+    margin: 0;
     background-color: #fff;
-    font-family: Satoshi,Helvetica,sans-serif;
-	font-size: 14px;
-	color: #555;
+    font-family: Satoshi, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(44, 49, 109);
+    
+
 }
 
 h2 {
@@ -19,17 +21,73 @@ h2.add {
     margin-top: 70px;
 }
 
-section {
+/* section {
     height: auto;
-    /* padding: 5rem;  */
-}
+    margin: auto;
+} */
 
 .contentContainer {
-    padding-top:40px;
-    padding-left:200px;
-    padding-right:200px;
+    max-width: 1280px;
+    margin: auto auto;
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    /* background-color: aliceblue; */
 }
 
 button {
     cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+    .contentContainer {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1190px) {
+    .contentContainer {
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contentContainer {
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 885px) {
+
+    /* For Tablet: */
+    .contentContainer {
+        max-width: 85%;
+        /* margin-top: 10%; */
+    }
+}
+
+@media only screen and (max-width: 624px) {
+
+    /* For tablet: */
+    .contentContainer {
+        max-width: 85%;
+    }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+    /* For tablet: */
+    .contentContainer {
+        max-width: 85%;
+    }
+
+}
+
+
+@media (max-width: 390px) {
+    .contentContainer {
+        max-width: 90%;
+    }
+
 }

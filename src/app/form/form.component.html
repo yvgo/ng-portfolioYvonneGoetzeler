@@ -1,15 +1,31 @@
-<div>
-    <form class="formContainer">
-        <input type="text" id="name" name="name">
-        <input type="text" id="mail" name="mail">
-        <textarea name="message" rows="10" cols="30">Text ...
-        </textarea>
-        <div class="agree">
-            <input type="checkbox" id="dsgvo" name="dsgvo" value="agree">
-            <label for="dsgvo"> I agree the terms of the ... *</label>
-            
+<div class="formStyle" >
+    <form (submit)="sendMail()" ngNativeValidate #myForm>
+        <div class="formContainer">
+            <div>
+                <input class="info" type="text" id="name" name="name" placeholder="Your Name *" #nameField required>
+                <input class="info" type="email" id="mail" name="mail" placeholder="Your E-Mail *" #mailField required>
+                <textarea required name="message" rows="10" cols="30" #messageField placeholder="Your Message ...*"></textarea>
+            </div>
+            <div class="agree">
+                <input type="checkbox" id="dsgvo" name="dsgvo" value="agree" #dsgvo required>
+                <label for="dsgvo"> I agree to the processing of the entered data and the <a routerLink="/dataProtection" target="_blank">privacy&nbsp;policy</a>.&nbsp;*</label>
+            </div>
+            <div class="mandatory">
+                <label>* mandatory field</label>
+            </div>
         </div>
-        <label for="pflicht">* Pflichtfeld</label>
-        <input type="submit" value="Submit">
+        <div class="buttonArrange">
+            <!-- <button (click)="doStg()">Senden</button> -->
+            <button type="submit" #sendButton>Senden</button>
+            <!-- <div class="buttonAnimation">
+                <a href="#" class="cta">
+                    <span>Send Message!</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </a>
+            </div> -->
+        </div>
     </form>
 </div>
