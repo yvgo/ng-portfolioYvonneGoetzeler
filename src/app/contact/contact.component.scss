@@ -47,6 +47,13 @@ h3 {
     bottom: 0px;
 }
 
+.upFlex {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+
 .up {
 	position: relative;
 
