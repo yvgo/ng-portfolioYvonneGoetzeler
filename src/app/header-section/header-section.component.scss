@@ -203,6 +203,24 @@ a {
 }
 
 
+/* contact Icoons */
+
+.contactLinks {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap:2.5em;
+	margin-top:10em; 
+}
+
+.colorSVG path {
+    fill: #FFD046;
+}
+
+.colorSVG path:hover {
+    fill: hsl(230, 74%, 24%);
+}
+
 /* burger Menu */
 
 #burgerButton {
