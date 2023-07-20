@@ -14,7 +14,7 @@ export class FormComponent {
   @ViewChild('dsgvo') dsgvo: ElementRef | undefined;
   @ViewChild('sendButton') sendButton: ElementRef | undefined;
 
-  messageSend: boolean = false;
+  messageSent: boolean = false;
 
   async sendMail() {
     let nameField = this.nameField?.nativeElement;
@@ -44,30 +44,22 @@ export class FormComponent {
       }
     );
 
-    this.messageSend = true;
+    this.messageSent = true;
 
     nameField.value = '';
     mailField.value = '';
     messageField.value = '';
-/*     dsgvo.value = ''; */
 
     //Text anzeigen: Nachricht gesendet
 
     setTimeout(() => {
-      this.messageSend = false;
+      this.messageSent = false;
 
     dsgvo.checked = false;
     nameField.disabled = false;
     mailField.disabled = false;
     messageField.disabled = false;
     sendButton.disabled = false;
-  }, 2000);
+  }, 4500);
   }
 }
-
-
-
-
-/* export class FavoriteColorComponent {
-  favoriteColorControl = new FormControl('');
-} */
