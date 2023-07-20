@@ -5,26 +5,19 @@ body {
     font-family: Satoshi, Helvetica, sans-serif;
     font-size: 16px;
     color: rgb(44, 49, 109);
-    
-
 }
 
 h2 {
     font-size: 40px;
 }
 
-h2.reduce {
-    margin-top: 0;
+.reduce {
+    /* margin-top: -2em; */
 }
 
-h2.add {
-    margin-top: 70px;
+.add {
+    margin-top: 3em;
 }
-
-/* section {
-    height: auto;
-    margin: auto;
-} */
 
 .contentContainer {
     max-width: 1280px;
@@ -32,7 +25,6 @@ h2.add {
     padding-top: 40px;
     padding-left: 0;
     padding-right: 0;
-    /* background-color: aliceblue; */
 }
 
 button {
@@ -86,37 +78,27 @@ button {
 }
 
 @media (max-width: 1024px) {
-    .contentContainer {
-        max-width: 85%;
-        padding-top: 0;
-    }
+
 }
 
 @media (max-width: 885px) {
 
     /* For Tablet: */
-    .contentContainer {
-        max-width: 85%;
-        /* margin-top: 10%; */
-    }
+
 }
 
 @media only screen and (max-width: 624px) {
 
     /* For tablet: */
-    .contentContainer {
-        max-width: 85%;
-    }
 
 }
 
 @media only screen and (max-width: 470px) {
 
     /* For tablet: */
-    .contentContainer {
-        max-width: 85%;
+    .add {
+        margin-top: 2em;
     }
-
 }
 
 
