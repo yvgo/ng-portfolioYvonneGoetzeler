@@ -1,18 +1,19 @@
-.bgContact {
-	height: 70vh;
-	background-image: url(../../assets/img/bgContact.png);
-	background-size: auto;
-	/* background-image: url(../../assets/img/geometric.png); 
-	background-size:contain;*/
-	background-repeat: no-repeat;
-	background-position: left bottom;
+.contentContainer {
+	display: flex;
+    margin-top: 50px;
 }
 
-.contentContainer {
-	position: relative;
-	margin-top: 0px;
-	top: 75px;
+.bgContact {
+	min-height: 100%;
+	/* height: 80vh; */
+	background-image: url(../../assets/img/bgBottom.png);
+	/* background-size: auto; */
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	/* background-attachment: fixed; */
 }
+
+
 
 .textArrange {
 	display: flex;
@@ -24,6 +25,7 @@
 	display: flex;
 	flex-direction: row;
 	gap: 30px;
+	margin-bottom: 5em;
 }
 
 .textArrange {
@@ -144,14 +146,15 @@ a {
 
 @media (max-width: 1024px) {
 	.bgContact {
+		/* max-height: 100%; */
 		background-size: 800px;
 	}
 
-	.contentContainer {
+	/* .contentContainer {
 		position: relative;
 		margin-top: 0px;
 		top: 40px;
-	}
+	} */
 
 	.upFix {
 		position: absolute;
@@ -164,14 +167,14 @@ a {
 
 	/* For Tablet: */
 	.bgContact {
-		background-size: 700px;
+		/* background-size: 700px; */
 	}
 
-	.contentContainer {
+	/* .contentContainer {
 		position: relative;
 		margin-top: 250px;
 		top: -250px;
-	}
+	} */
 
 	.arrange {
 		display: flex;
@@ -187,12 +190,16 @@ a {
 }
 
 @media only screen and (max-width: 624px) {
-
 	/* For Mobile: */
+
+	.bgContact {
+		max-height: 100vh;
+	}
+
 	.contentContainer {
 		position: relative;
-		margin-top: 500px;
-		top: -500px;
+		/* margin-top: 500px;
+		top: -500px; */
 	}
 }
 
