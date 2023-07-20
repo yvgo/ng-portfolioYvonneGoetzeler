@@ -1,7 +1,3 @@
-.formStyle {
-  /* padding-bottom: 50px; */
-}
-
 .formContainer {
   display: flex;
   flex-direction: column;
@@ -180,8 +176,8 @@ a {
 }
 
 @media only screen and (max-width: 624px) {
-
   /* For Mobile: */
+  
   .formContainer {
     display: flex;
     flex-direction: column;
@@ -219,14 +215,6 @@ a {
 
 @media only screen and (max-width: 490px) {
 
-  /* input.info {
-    width: 82%;
-  }
-
-  textarea {
-    width: 77%;
-  } */
-
   .agree {
     width: 80%;
   }
@@ -238,8 +226,5 @@ a {
   textarea {
     width: 88%;
   }
-/* 
-  .agree {
-    width: 50%;
-  } */
+
 }
