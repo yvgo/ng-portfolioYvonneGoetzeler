@@ -25,7 +25,7 @@ export const PROJECTS: any = [
     {
         id: 3,
         title: 'World of Pokemons',
-        imgUrl: '../../assets/img/poke.jpg',
+        imgUrl: '../../assets/img/poke3.png',
         //imgUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/angular-ngrx-course.png',
         longDescription: 'Based on the PokéApi a simple library that provides an catalogues pokemon information.',
         keywords: 'JavaScript | API | HTML | CSS',
